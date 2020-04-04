@@ -1,2 +1,8 @@
-#!/bin/sh
-dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
+#!/bin/bash
+pywal=false
+if [[ $pywal == false ]]; then
+  dmenu_path | dmenu "$@" -l 7 -p "Run:" | ${SHELL:-"/bin/sh"} &
+else
+  . "${HOME}/.cache/wals/colors.sh"
+  dmenu_path | dmenu "$@" -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -l 7 -p "Run: "
+fi

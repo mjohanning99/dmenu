@@ -1,15 +1,7 @@
-dmenu - dynamic menu
-====================
-dmenu is an efficient dynamic menu for X.
+# Marvin's build of suckless' dmenu
+This is my build of suckless' `dmenu` program. It includes support for pywal, has a different (and bigger!) default font, has the `centre` patched applied and can be easily used with my `dmenu` scripts.
 
-
-Requirements
-------------
-In order to build dmenu you need the Xlib header files.
-
-
-Installation
-------------
+## Installation
 Edit config.mk to match your local setup (dmenu is installed into
 the /usr/local namespace by default).
 
